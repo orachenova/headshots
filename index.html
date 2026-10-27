@@ -229,6 +229,7 @@
     /* About: portrait crop + waist-up on mobile */
     .about-inner { grid-template-columns: 1fr; min-height: auto; }
     .about-image {
+      order: 1;
       height: 75vw; max-height: 420px;
       order: 1;
     }
@@ -248,7 +249,8 @@
 
     /* Closing: stack */
     .closing { grid-template-columns: 1fr; min-height: auto; }
-    .closing-image { height: 80vw; max-height: 500px; }
+    .closing-image { height: 80vw; max-height: 500px; order: 1; }
+    .closing-content { order: 2; }
     .closing-content { padding: 4rem 1.5rem; }
     .closing-body { max-width: 100%; }
 
